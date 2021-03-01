@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+    var name = $('#name').val();
+    $("#demo").text(name);
+});
+});
+</script>
+</head>
+
+<body>
+Enter your Word here
+<input type="text" id="name">
+<p>Click to Display</p>
+<button>Display Entry</button>
+<p id="demo"></p>
+</body>
+</html>
